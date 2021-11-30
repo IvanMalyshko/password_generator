@@ -1,0 +1,31 @@
+<div style="display: flex; width:100%; flex-direction:column; align-items:center">
+    <h1>Password Generator</h1>
+
+<form action="{% url 'password' %}">
+    <select name="length">
+        <option value="6">6 символов</option>
+        <option value="7">7 символов</option>
+        <option value="8">8 символов</option>
+        <option value="9">9 символов</option>
+        <option value="10">10 символов</option>
+        <option value="11">11 символов</option>
+        <option value="12" selected="selected">12 символов</option>
+        <option value="13">13 символов</option>
+        <option value="14">14 символов</option>
+    </select>
+    <br>
+    <input type="checkbox" name="uppercase" value="on"> Uppercase
+    <br>
+    <input type="checkbox" name="numbers" value="on"> Numbers
+    <br>
+    <input type="checkbox" name="special" value="on"> Special Characters
+    <br>
+
+    <input type="submit" value="Generate Password">
+    <br>
+    <br>
+    <div><input type="button" value="About_me" onclick="location.href='/about_me'"></div>
+</form>
+
+</div>
+
